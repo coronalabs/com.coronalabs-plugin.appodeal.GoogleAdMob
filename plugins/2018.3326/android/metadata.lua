@@ -5,9 +5,9 @@ local metadata =
 		format = "jar",
 	},
 	coronaManifest = {
-		dependencies = {
-			["shared.google.play.services.ads"] = "com.coronalabs",
-		}
+		-- dependencies = {
+		-- 	["shared.google.play.services.ads"] = "com.coronalabs",
+		-- }
 	}
 }
 

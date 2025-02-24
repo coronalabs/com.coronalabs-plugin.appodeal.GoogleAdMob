@@ -3,5 +3,5 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.appodeal.ads.sdk.networks:admob:3.4.0.0'
+    implementation 'com.appodeal.ads.sdk.networks:admob:3.4.2.0'
 }

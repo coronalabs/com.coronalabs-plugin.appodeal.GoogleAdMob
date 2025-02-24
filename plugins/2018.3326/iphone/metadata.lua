@@ -4,7 +4,7 @@ local metadata =
 	{
 		format = 'staticLibrary',
 		staticLibs = { 'APDGoogleAdMobAdapter', },
-		frameworks = { 'GoogleAppMeasurement', 'GoogleAppMeasurementIdentitySupport', 'GoogleMobileAds', 'Google_Mobile_Ads_SDK', 'FBLPromises', 'GoogleUtilities', 'nanopb', "UserMessagingPlatform" },
+		frameworks = { 'GoogleAppMeasurement', 'GoogleAppMeasurementIdentitySupport', 'GoogleMobileAds', 'FBLPromises', 'GoogleUtilities', 'nanopb', "UserMessagingPlatform" },
 		frameworksOptional = {},
 	},
 }

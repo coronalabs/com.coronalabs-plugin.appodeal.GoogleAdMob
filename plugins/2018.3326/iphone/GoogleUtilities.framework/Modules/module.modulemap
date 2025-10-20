@@ -1,8 +1,6 @@
 framework module GoogleUtilities {
-umbrella header "GoogleUtilities-umbrella.h"
-export *
-module * { export * }
-  link framework "Security"
-  link framework "SystemConfiguration"
-  link "z"
+  umbrella header "GoogleUtilities-umbrella.h"
+
+  export *
+  module * { export * }
 }

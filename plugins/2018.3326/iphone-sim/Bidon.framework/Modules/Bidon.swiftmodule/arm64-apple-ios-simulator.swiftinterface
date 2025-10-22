@@ -1,0 +1,776 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Bidon
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import AdSupport
+import AppTrackingTransparency
+@_exported import Bidon
+import CoreLocation
+import CoreTelephony
+import Foundation
+import Network
+import Swift
+import SystemConfiguration
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os.log
+import os
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(BDNSdk) final public class BidonSdk : ObjectiveC.NSObject {
+  final public var isTestMode: Swift.Bool {
+    get
+  }
+  @objc public static let sdkVersion: Swift.String
+  @objc public static var isInitialized: Swift.Bool {
+    @objc get
+  }
+  @objc public static var segment: any Bidon.Segment {
+    @objc get
+  }
+  @objc public static var regulations: any Bidon.Regulations {
+    @objc get
+  }
+  @objc public static var logLevel: Bidon.Logger.Level {
+    @objc get
+    @objc set
+  }
+  @objc public static var isTestMode: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public static var baseURL: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc public static var HTTPHeaders: [Swift.String : Swift.String] {
+    @objc get
+    @objc set
+  }
+  @objc public static var extras: [Swift.String : Swift.AnyHashable]? {
+    @objc get
+  }
+  @objc public static func registerDefaultAdapters()
+  @objc public static func registerAdapter(className: Swift.String)
+  public static func registeredAdapters() -> [any Bidon.Adapter]
+  public static func registerAdapter(adapter: any Bidon.Adapter)
+  @objc public static func setExtraValue(_ value: Swift.AnyHashable?, for key: Swift.String)
+  @objc public static func setFramework(_ framework: Bidon.Framework, version: Swift.String)
+  @objc public static func setPluginVersion(_ pluginVersion: Swift.String)
+  @objc public static func initialize(appKey: Swift.String, completion: @escaping () -> () = {})
+  @objc deinit
+}
+@objc(BDNBannerPosition) public enum BannerPosition : Swift.Int {
+  case horizontalTop = 0
+  case horizontalBottom
+  case verticalLeft
+  case verticalRight
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc(BDNBannerProvider) final public class BannerProvider : ObjectiveC.NSObject, Bidon.AdObject {
+  @objc final public var isReady: Swift.Bool {
+    @objc get
+  }
+  @objc final public var isShowing: Swift.Bool {
+    @objc get
+  }
+  @objc final public var extras: [Swift.String : Swift.AnyHashable] {
+    @objc get
+  }
+  @objc weak final public var delegate: (any Bidon.AdObjectDelegate)?
+  @objc final public var format: Bidon.BannerFormat {
+    @objc get
+    @objc set
+  }
+  @objc final public var adSize: CoreFoundation.CGSize {
+    @objc get
+  }
+  @objc weak final public var rootViewController: UIKit.UIViewController? {
+    @objc get
+    @objc set
+  }
+  @objc public init(auctionKey: Swift.String? = nil)
+  @objc final public func notifyWin()
+  @objc final public func notifyLoss(external demandId: Swift.String, price: Bidon.Price)
+  @objc final public func setExtraValue(_ value: Swift.AnyHashable?, for key: Swift.String)
+  @objc final public func setCustomPosition(_ position: CoreFoundation.CGPoint, rotationAngleDegrees: CoreFoundation.CGFloat = 0, anchorPoint: CoreFoundation.CGPoint = CGPoint(x: 0.5, y: 0.5))
+  @objc final public func setFixedPosition(_ posistion: Bidon.BannerPosition)
+  @objc final public func loadAd(with pricefloor: Bidon.Price = .zero)
+  @objc final public func show()
+  @objc final public func hide()
+  @objc deinit
+}
+extension Bidon.BannerProvider : Bidon.AdViewDelegate {
+  @objc final public func adView(_ adView: any UIKit.UIView & Bidon.AdView, willPresentScreen ad: any Bidon.Ad)
+  @objc final public func adView(_ adView: any UIKit.UIView & Bidon.AdView, didDismissScreen ad: any Bidon.Ad)
+  @objc final public func adView(_ adView: any UIKit.UIView & Bidon.AdView, willLeaveApplication ad: any Bidon.Ad)
+  @objc final public func adObject(_ adObject: any Bidon.AdObject, didLoadAd ad: any Bidon.Ad, auctionInfo: any Bidon.AuctionInfo)
+  @objc final public func adObject(_ adObject: any Bidon.AdObject, didFailToLoadAd error: any Swift.Error, auctionInfo: any Bidon.AuctionInfo)
+  @objc final public func adObject(_ adObject: any Bidon.AdObject, didFailToPresentAd error: any Swift.Error)
+  @objc final public func adObject(_ adObject: any Bidon.AdObject, didExpireAd ad: any Bidon.Ad)
+  @objc final public func adObject(_ adObject: any Bidon.AdObject, didRecordImpression ad: any Bidon.Ad)
+  @objc final public func adObject(_ adObject: any Bidon.AdObject, didRecordClick ad: any Bidon.Ad)
+  @objc final public func adObject(_ adObject: any Bidon.AdObject, didPay revenue: any Bidon.AdRevenue, ad: any Bidon.Ad)
+}
+public protocol Adapter {
+  var demandId: Swift.String { get }
+  var name: Swift.String { get }
+  var adapterVersion: Swift.String { get }
+  var sdkVersion: Swift.String { get }
+  init()
+}
+@objc public protocol DemandAd {
+  @objc var id: Swift.String { get }
+  @objc optional var networkName: Swift.String { get }
+  @objc optional var dsp: Swift.String { get }
+  @objc optional var price: Bidon.Price { get }
+  @objc optional var currency: Bidon.Currency { get }
+}
+public enum MediationError : Swift.Error {
+  case noBid(Swift.String?)
+  case noFill(Swift.String?)
+  case unknownAdapter
+  case adapterNotInitialized
+  case bidTimeoutReached
+  case fillTimeoutReached
+  case networkError
+  case incorrectAdUnitId
+  case noAppropriateAdUnitId
+  case auctionCancelled
+  case adFormatNotSupported
+  case unspecifiedException(Swift.String)
+  case belowPricefloor
+}
+@objc(BDNRewardedAd) public protocol RewardedAdObject : Bidon.FullscreenAdObject {
+}
+@objc(BDNRewardedAdDelegate) public protocol RewardedAdDelegate : Bidon.FullscreenAdDelegate {
+  @objc func rewardedAd(_ rewardedAd: any Bidon.RewardedAdObject, didRewardUser reward: any Bidon.Reward, ad: any Bidon.Ad)
+}
+extension Bidon.Framework : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+@objc public enum AdType : Swift.Int, Swift.Codable {
+  case banner = 0
+  case interstitial = 1
+  case rewarded = 2
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension Bidon.AdType : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+public struct AdViewContext {
+  public var format: Bidon.BannerFormat
+  public var size: CoreFoundation.CGSize
+  public var rootViewController: UIKit.UIViewController?
+  public init(format: Bidon.BannerFormat, size: CoreFoundation.CGSize, rootViewController: UIKit.UIViewController?)
+  public init(_ format: Bidon.BannerFormat, rootViewController: UIKit.UIViewController? = nil)
+}
+public protocol AdViewContainer : UIKit.UIView {
+  var isAdaptive: Swift.Bool { get }
+}
+public protocol DemandProviderAdViewDelegate : AnyObject {
+  func providerWillPresentModalView(_ provider: any Bidon.AdViewDemandProvider, adView: any Bidon.AdViewContainer)
+  func providerDidDismissModalView(_ provider: any Bidon.AdViewDemandProvider, adView: any Bidon.AdViewContainer)
+  func providerWillLeaveApplication(_ provider: any Bidon.AdViewDemandProvider, adView: any Bidon.AdViewContainer)
+}
+public protocol AdViewDemandProvider : Bidon.DemandProvider {
+  var adViewDelegate: (any Bidon.DemandProviderAdViewDelegate)? { get set }
+  func container(for ad: Self.DemandAdType) -> (any Bidon.AdViewContainer)?
+  func didTrackImpression(for ad: Self.DemandAdType)
+}
+@objc(BDNAdView) public protocol AdView : Bidon.AdObject {
+}
+@objc(BDNAdViewDelegate) public protocol AdViewDelegate : Bidon.AdObjectDelegate {
+  @objc func adView(_ adView: any UIKit.UIView & Bidon.AdView, willPresentScreen ad: any Bidon.Ad)
+  @objc func adView(_ adView: any UIKit.UIView & Bidon.AdView, didDismissScreen ad: any Bidon.Ad)
+  @objc func adView(_ adView: any UIKit.UIView & Bidon.AdView, willLeaveApplication ad: any Bidon.Ad)
+}
+public protocol GenericDirectDemandProvider : Bidon.DemandProvider {
+  func load(pricefloor: Bidon.Price, adUnitExtrasDecoder: any Swift.Decoder, response: @escaping Bidon.DemandProviderResponse)
+}
+public protocol DirectDemandProvider : Bidon.GenericDirectDemandProvider {
+  associatedtype AdUnitExtras : Swift.Decodable
+  func load(pricefloor: Bidon.Price, adUnitExtras: Self.AdUnitExtras, response: @escaping Bidon.DemandProviderResponse)
+}
+extension Bidon.DirectDemandProvider {
+  public func load(pricefloor: Bidon.Price, adUnitExtrasDecoder: any Swift.Decoder, response: @escaping Bidon.DemandProviderResponse)
+}
+@objc(BDNAdObject) public protocol AdObject : Bidon.ExtrasProvider {
+  @objc var isReady: Swift.Bool { get }
+  @objc(notifyWin) func notifyWin()
+  @objc(notifyLossWithExternalDemandId:price:) func notifyLoss(external demandId: Swift.String, price: Bidon.Price)
+}
+@objc(BDNAdObjectDelegate) public protocol AdObjectDelegate {
+  @objc func adObject(_ adObject: any Bidon.AdObject, didLoadAd ad: any Bidon.Ad, auctionInfo: any Bidon.AuctionInfo)
+  @objc func adObject(_ adObject: any Bidon.AdObject, didFailToLoadAd error: any Swift.Error, auctionInfo: any Bidon.AuctionInfo)
+  @objc optional func adObject(_ adObject: any Bidon.AdObject, didExpireAd ad: any Bidon.Ad)
+  @objc optional func adObject(_ adObject: any Bidon.AdObject, didFailToPresentAd error: any Swift.Error)
+  @objc optional func adObject(_ adObject: any Bidon.AdObject, didRecordImpression ad: any Bidon.Ad)
+  @objc optional func adObject(_ adObject: any Bidon.AdObject, didRecordClick ad: any Bidon.Ad)
+  @objc optional func adObject(_ adObject: any Bidon.AdObject, didPay revenue: any Bidon.AdRevenue, ad: any Bidon.Ad)
+}
+public enum SdkError : Swift.Error, Swift.CustomStringConvertible {
+  case generic(error: any Swift.Error)
+  case message(Swift.String)
+  case unknown
+  case noFill
+  case cancelled
+  case internalInconsistency
+  case invalidPresentationState
+  case unableToFindRootViewController
+  public var description: Swift.String {
+    get
+  }
+  public init(_ message: Swift.String)
+  public init(_ error: (any Swift.Error)?)
+}
+@objc(BDNErrorCode) public enum ErrorCode : Swift.Int {
+  case sdkNotInitialized = 1
+  case appKeyIsInvalid
+  case internalServerSdkError
+  case networkError
+  case auctionInProgress
+  case auctionCancelled
+  case noAuctionResults
+  case noRoundResults
+  case noContextFound
+  case noBid
+  case noFill
+  case bidTimedOut
+  case fillTimedOut
+  case adFormatIsNotSupported
+  case unspecified
+  case adNotReady
+  case noAppropriateAdUnitId
+  case expired
+  case incorrectAdUnit
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc(BDNReward) public protocol Reward {
+  @objc var label: Swift.String { get }
+  @objc var amount: Swift.Int { get }
+}
+final public class RewardWrapper<Wrapped> : Bidon.Reward {
+  @objc final public let label: Swift.String
+  @objc final public let amount: Swift.Int
+  final public let wrapped: Wrapped
+  public init(label: Swift.String, amount: Swift.Int, wrapped: Wrapped)
+  @objc deinit
+}
+final public class EmptyReward : Bidon.Reward {
+  @objc final public let label: Swift.String
+  @objc final public let amount: Swift.Int
+  public init()
+  @objc deinit
+}
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor @preconcurrency public static var bd: UIKit.UIDevice.DSL
+  public struct DSL {
+    @Bidon.MainThreadComputable public var isPhone: Swift.Bool {
+      get
+    }
+  }
+}
+@propertyWrapper public struct MainThreadComputable<T> {
+  public var wrappedValue: T {
+    get
+  }
+  public init(_ block: @autoclosure @escaping () -> T)
+}
+public enum DemandProviderEvent {
+  case win
+  case lose(Swift.String, any Bidon.DemandAd, Bidon.Price)
+}
+public typealias DemandProviderResponse = (Swift.Result<any Bidon.DemandAd, Bidon.MediationError>) -> ()
+public protocol DemandProviderDelegate : AnyObject {
+  func providerWillPresent(_ provider: any Bidon.DemandProvider)
+  func providerDidHide(_ provider: any Bidon.DemandProvider)
+  func providerDidClick(_ provider: any Bidon.DemandProvider)
+  func provider(_ provider: any Bidon.DemandProvider, didExpireAd ad: any Bidon.DemandAd)
+  func provider(_ provider: any Bidon.DemandProvider, didFailToDisplayAd ad: any Bidon.DemandAd, error: Bidon.SdkError)
+}
+public protocol DemandProviderRevenueDelegate : AnyObject {
+  func provider(_ provider: any Bidon.DemandProvider, didPayRevenue revenue: any Bidon.AdRevenue, ad: any Bidon.DemandAd)
+  func provider(_ provider: any Bidon.DemandProvider, didLogImpression ad: any Bidon.DemandAd)
+}
+public protocol DemandProvider : AnyObject {
+  associatedtype DemandAdType : Bidon.DemandAd
+  var delegate: (any Bidon.DemandProviderDelegate)? { get set }
+  var revenueDelegate: (any Bidon.DemandProviderRevenueDelegate)? { get set }
+  func notify(ad: Self.DemandAdType, event: Bidon.DemandProviderEvent)
+}
+@objc(BDNInterstitial) final public class Interstitial : ObjectiveC.NSObject, Bidon.FullscreenAdObject {
+  @objc weak final public var delegate: (any Bidon.FullscreenAdDelegate)?
+  @objc final public let auctionKey: Swift.String?
+  @objc final public var isReady: Swift.Bool {
+    @objc get
+  }
+  @objc final public var extras: [Swift.String : Swift.AnyHashable] {
+    @objc get
+  }
+  @objc public init(auctionKey: Swift.String? = nil)
+  @objc final public func setExtraValue(_ value: Swift.AnyHashable?, for key: Swift.String)
+  @objc final public func loadAd(with pricefloor: Bidon.Price = .zero)
+  @objc final public func showAd(from rootViewController: UIKit.UIViewController)
+  @objc(notifyWin) final public func notifyWin()
+  @objc(notifyLossWithExternalDemandId:price:) final public func notifyLoss(external demandId: Swift.String, price: Bidon.Price)
+  @objc deinit
+}
+public protocol ParameterizedInitializableAdapter : Bidon.InitializableAdapter {
+  associatedtype Parameters : Swift.Decodable
+  func initialize(parameters: Self.Parameters, completion: @escaping (Bidon.SdkError?) -> Swift.Void)
+}
+extension Bidon.ParameterizedInitializableAdapter {
+  public func initialize(from decoder: any Swift.Decoder, completion: @escaping (Swift.Result<Swift.Void, Bidon.SdkError>) -> Swift.Void)
+}
+final public class AdRevenueModel : Bidon.AdRevenue {
+  @objc final public let revenue: Bidon.Price
+  @objc final public let precision: Bidon.RevenuePrecision
+  @objc final public let currency: Bidon.Currency
+  public init(revenue: Bidon.Price, precision: Bidon.RevenuePrecision, currency: Bidon.Currency = .default)
+  convenience public init(eCPM: Bidon.Price, precision: Bidon.RevenuePrecision = .estimated)
+  @objc deinit
+}
+public protocol InjectionKey {
+  associatedtype Value
+  static var currentValue: Self.Value { get set }
+}
+public struct InjectedValues {
+  public static subscript<K>(key: K.Type) -> K.Value where K : Bidon.InjectionKey {
+    get
+    set
+  }
+  public static subscript<T>(keyPath: Swift.WritableKeyPath<Bidon.InjectedValues, T>) -> T {
+    get
+    set
+  }
+}
+@propertyWrapper public struct Injected<T> {
+  public var wrappedValue: T {
+    get
+    set
+  }
+  public init(_ keyPath: Swift.WritableKeyPath<Bidon.InjectedValues, T>)
+}
+@objc(BDNAdBidType) public enum AdBidType : Swift.Int {
+  case cpm = 1
+  case rtb
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc(BDNAdNetworkUnit) public protocol AdNetworkUnit {
+  @objc var uid: Swift.String { get }
+  @objc var demandId: Swift.String { get }
+  @objc var label: Swift.String { get }
+  @objc var pricefloor: Bidon.Price { get }
+  @objc var bidType: Bidon.AdBidType { get }
+  @objc var extras: [Swift.String : Bidon.BidonDecodable] { get }
+  @objc var extrasJsonString: Swift.String? { get }
+}
+@objc(BDNAd) public protocol Ad {
+  @objc var id: Swift.String { get }
+  @objc var adType: Bidon.AdType { get }
+  @objc var price: Bidon.Price { get }
+  @objc var currencyCode: Bidon.Currency? { get }
+  @objc var networkName: Swift.String { get }
+  @objc var dsp: Swift.String? { get }
+  @objc var auctionId: Swift.String { get }
+  @objc var adUnit: any Bidon.AdNetworkUnit { get }
+}
+extension UIKit.UIApplication {
+  @_Concurrency.MainActor @preconcurrency public var bd: UIKit.UIApplication.DSL {
+    get
+  }
+  public struct DSL {
+    public var window: UIKit.UIWindow? {
+      get
+    }
+    public var windows: [UIKit.UIWindow] {
+      get
+    }
+    public var topViewcontroller: UIKit.UIViewController? {
+      get
+    }
+    public var isLandscape: Swift.Bool {
+      get
+    }
+  }
+}
+@objc(BDNBannerFormat) public enum BannerFormat : Swift.Int, Swift.Codable, Swift.CustomStringConvertible {
+  case banner
+  case leaderboard
+  case mrec
+  case adaptive
+  public var preferredSize: CoreFoundation.CGSize {
+    get
+  }
+  public var description: Swift.String {
+    get
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public typealias Price = Swift.Double
+extension Swift.Double {
+  public static let unknown: Swift.Double
+  public var isUnknown: Swift.Bool {
+    get
+  }
+}
+public typealias Currency = Swift.String
+extension Swift.String {
+  public static var `default`: Swift.String
+}
+@objc(BDNRevenuePrecision) public enum RevenuePrecision : Swift.Int {
+  case precise
+  case estimated
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc(BDNAdRevenue) public protocol AdRevenue {
+  @objc var revenue: Bidon.Price { get }
+  @objc var precision: Bidon.RevenuePrecision { get }
+  @objc var currency: Bidon.Currency { get }
+}
+public typealias BiddingContextEncoderResponse = (Swift.Result<Swift.String, Bidon.MediationError>) -> ()
+public protocol GenericBiddingDemandProvider : Bidon.DemandProvider {
+  func collectBiddingTokenEncoder(adUnitExtrasDecoder: any Swift.Decoder, response: @escaping Bidon.BiddingContextEncoderResponse)
+  func collectBiddingTokenEncoder(auctionKey: Swift.String?, adUnitExtrasDecoder: any Swift.Decoder, response: @escaping Bidon.BiddingContextEncoderResponse)
+  func load(payloadDecoder: any Swift.Decoder, adUnitExtrasDecoder: any Swift.Decoder, response: @escaping Bidon.DemandProviderResponse)
+}
+public protocol BiddingDemandProvider : Bidon.GenericBiddingDemandProvider {
+  associatedtype BiddingPayload : Swift.Decodable
+  associatedtype BiddingTokenExtras : Swift.Decodable
+  associatedtype AdUnitExtras : Swift.Decodable
+  func collectBiddingToken(biddingTokenExtras: Self.BiddingTokenExtras, response: @escaping (Swift.Result<Swift.String, Bidon.MediationError>) -> ())
+  func collectBiddingToken(auctionKey: Swift.String?, biddingTokenExtras: Self.BiddingTokenExtras, response: @escaping (Swift.Result<Swift.String, Bidon.MediationError>) -> ())
+  func load(payload: Self.BiddingPayload, adUnitExtras: Self.AdUnitExtras, response: @escaping Bidon.DemandProviderResponse)
+}
+extension Bidon.BiddingDemandProvider {
+  public func collectBiddingToken(auctionKey: Swift.String?, biddingTokenExtras: Self.BiddingTokenExtras, response: @escaping (Swift.Result<Swift.String, Bidon.MediationError>) -> ())
+  public func collectBiddingTokenEncoder(auctionKey: Swift.String?, adUnitExtrasDecoder: any Swift.Decoder, response: @escaping Bidon.BiddingContextEncoderResponse)
+  public func collectBiddingTokenEncoder(adUnitExtrasDecoder: any Swift.Decoder, response: @escaping Bidon.BiddingContextEncoderResponse)
+  public func load(payloadDecoder: any Swift.Decoder, adUnitExtrasDecoder: any Swift.Decoder, response: @escaping Bidon.DemandProviderResponse)
+}
+final public class Repository<Key, Value> where Key : Swift.Hashable {
+  public init(_ queueName: Swift.String)
+  final public func removeValue(forKey key: Key)
+  final public subscript<T>(key: Key) -> T? {
+    get
+    set
+  }
+  @objc deinit
+}
+public typealias AnyDirectInterstitialDemandProvider = any Bidon.DirectDemandProvider & Bidon.InterstitialDemandProvider
+public typealias AnyBiddingInterstitialDemandProvider = any Bidon.BiddingDemandProvider & Bidon.InterstitialDemandProvider
+public protocol DirectInterstitialDemandSourceAdapter : Bidon.Adapter {
+  func directInterstitialDemandProvider() throws -> Bidon.AnyDirectInterstitialDemandProvider
+}
+public protocol BiddingInterstitialDemandSourceAdapter : Bidon.Adapter {
+  func biddingInterstitialDemandProvider() throws -> Bidon.AnyBiddingInterstitialDemandProvider
+}
+public typealias AnyDirectRewardedAdDemandProvider = any Bidon.DirectDemandProvider & Bidon.RewardedAdDemandProvider
+public typealias AnyBiddingRewardedAdDemandProvider = any Bidon.BiddingDemandProvider & Bidon.RewardedAdDemandProvider
+public protocol DirectRewardedAdDemandSourceAdapter : Bidon.Adapter {
+  func directRewardedAdDemandProvider() throws -> Bidon.AnyDirectRewardedAdDemandProvider
+}
+public protocol BiddingRewardedAdDemandSourceAdapter : Bidon.Adapter {
+  func biddingRewardedAdDemandProvider() throws -> Bidon.AnyBiddingRewardedAdDemandProvider
+}
+public typealias AnyDirectAdViewDemandProvider = any Bidon.AdViewDemandProvider & Bidon.DirectDemandProvider
+public typealias AnyBiddingAdViewDemandProvider = any Bidon.AdViewDemandProvider & Bidon.BiddingDemandProvider
+public protocol DirectAdViewDemandSourceAdapter : Bidon.Adapter {
+  func directAdViewDemandProvider(context: Bidon.AdViewContext) throws -> Bidon.AnyDirectAdViewDemandProvider
+}
+public protocol BiddingAdViewDemandSourceAdapter : Bidon.Adapter {
+  func biddingAdViewDemandProvider(context: Bidon.AdViewContext) throws -> Bidon.AnyBiddingAdViewDemandProvider
+}
+@objc(BDNGender) public enum Gender : Swift.Int {
+  case male
+  case female
+  case other
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc(BDNSegment) public protocol Segment {
+  @objc var uid: Swift.String? { get }
+  @objc var gender: Bidon.Gender { get set }
+  @objc var age: Swift.Int { get set }
+  @objc var level: Swift.Int { get set }
+  @objc var isPaid: Swift.Bool { get set }
+  @objc var inAppAmount: Bidon.Price { get set }
+  @objc var customAttributes: [Swift.String : Swift.AnyHashable] { get }
+  @objc func setCustomAttribute(_ customAttribute: Swift.AnyHashable?, for key: Swift.String)
+}
+@objc final public class BidonDecodable : ObjectiveC.NSObject, Swift.Codable {
+  @objc final public let value: Any
+  @objc final public var stringValue: Swift.String? {
+    @objc get
+  }
+  required public init(from decoder: any Swift.Decoder) throws
+  final public func encode(to encoder: any Swift.Encoder) throws
+  @objc public init(value: Any)
+  @objc deinit
+}
+extension Bidon.Gender : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+public protocol InterstitialDemandProvider : Bidon.DemandProvider {
+  func show(ad: Self.DemandAdType, from viewController: UIKit.UIViewController)
+}
+@objc(BDNExtrasProvider) public protocol ExtrasProvider {
+  @objc var extras: [Swift.String : Swift.AnyHashable] { get }
+  @objc func setExtraValue(_ value: Swift.AnyHashable?, for key: Swift.String)
+}
+extension Bidon.ExtrasProvider {
+  public subscript(extrasKey key: Swift.String) -> Swift.AnyHashable? {
+    get
+    set
+  }
+}
+@_inheritsConvenienceInitializers @objc(BDNLogger) public class Logger : ObjectiveC.NSObject {
+  @objc(BDNLoggerLevel) public enum Level : Swift.Int {
+    case verbose = 0
+    case debug = 1
+    case info = 2
+    case warning = 3
+    case error = 4
+    case off = 5
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @objc(BDNLoggerFormat) public enum Format : Swift.Int {
+    case short = 0
+    case full = 1
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @objc public static var level: Bidon.Logger.Level
+  @objc public static var format: Bidon.Logger.Format
+  public static func verbose(_ message: @autoclosure () -> Any, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line)
+  public static func debug(_ message: @autoclosure () -> Any, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line)
+  public static func info(_ message: @autoclosure () -> Any, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line)
+  public static func warning(_ message: @autoclosure () -> Any, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line)
+  public static func error(_ message: @autoclosure () -> Any, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc(BDNBannerView) @_Concurrency.MainActor @preconcurrency final public class BannerView : UIKit.UIView, Bidon.AdView {
+  @objc @_Concurrency.MainActor @preconcurrency final public var autorefreshInterval: Swift.Double
+  @objc @_Concurrency.MainActor @preconcurrency final public var isAutorefreshing: Swift.Bool
+  @objc @_Concurrency.MainActor @preconcurrency final public let auctionKey: Swift.String?
+  @objc @_Concurrency.MainActor @preconcurrency final public var format: Bidon.BannerFormat
+  @objc @_Concurrency.MainActor @preconcurrency weak final public var rootViewController: UIKit.UIViewController?
+  @objc @_Concurrency.MainActor @preconcurrency weak final public var delegate: (any Bidon.AdViewDelegate)?
+  @_Concurrency.MainActor @preconcurrency @objc final public var isReady: Swift.Bool {
+    @objc get
+  }
+  @_Concurrency.MainActor @preconcurrency @objc final public var extras: [Swift.String : Swift.AnyHashable] {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor @preconcurrency public init(frame: CoreFoundation.CGRect, auctionKey: Swift.String?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency @objc final public func setExtraValue(_ value: Swift.AnyHashable?, for key: Swift.String)
+  @objc @_Concurrency.MainActor @preconcurrency final public func loadAd(with pricefloor: Bidon.Price = .zero, auctionKey: Swift.String? = nil)
+  @objc(notifyWin) @_Concurrency.MainActor @preconcurrency final public func notifyWin()
+  @objc(notifyLossWithExternalDemandId:price:) @_Concurrency.MainActor @preconcurrency final public func notifyLoss(external demandId: Swift.String, price: Bidon.Price)
+  @objc deinit
+}
+public protocol InitializableAdapter : Bidon.Adapter {
+  var isInitialized: Swift.Bool { get }
+  func initialize(from decoder: any Swift.Decoder, completion: @escaping (Swift.Result<Swift.Void, Bidon.SdkError>) -> Swift.Void)
+}
+@objc(BDNCOPPAAppliesStatus) public enum COPPAAppliesStatus : Swift.Int {
+  case unknown = -1
+  case no = 0
+  case yes = 1
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc(BDNGDPRAppliesStatus) public enum GDPRAppliesStatus : Swift.Int {
+  case unknown = -1
+  case doesNotApply = 0
+  case applies = 1
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc(BDNRegulations) public protocol Regulations {
+  @objc var gdpr: Bidon.GDPRAppliesStatus { get set }
+  @objc var gdprConsentString: Swift.String? { get set }
+  @objc var gdprApplies: Swift.Bool { get }
+  @objc var hasGdprConsent: Swift.Bool { get }
+  @objc var usPrivacyString: Swift.String? { get set }
+  @objc var ccpaApplies: Swift.Bool { get }
+  @objc var hasCcpaConsent: Swift.Bool { get }
+  @objc var coppa: Bidon.COPPAAppliesStatus { get set }
+  @objc var coppaApplies: Swift.Bool { get }
+}
+@objc(BDNFullscreenAd) public protocol FullscreenAdObject : Bidon.AdObject {
+}
+@objc(BDNFullscreenAdDelegate) public protocol FullscreenAdDelegate : Bidon.AdObjectDelegate {
+  @objc func fullscreenAd(_ fullscreenAd: any Bidon.FullscreenAdObject, willPresentAd ad: any Bidon.Ad)
+  @objc func fullscreenAd(_ fullscreenAd: any Bidon.FullscreenAdObject, didDismissAd ad: any Bidon.Ad)
+}
+public protocol DemandProviderRewardDelegate : AnyObject {
+  func provider(_ provider: any Bidon.DemandProvider, didReceiveReward reward: any Bidon.Reward)
+}
+public protocol RewardedAdDemandProvider : Bidon.InterstitialDemandProvider {
+  var rewardDelegate: (any Bidon.DemandProviderRewardDelegate)? { get set }
+}
+@objc(BDNAuctionInfo) public protocol AuctionInfo {
+  @objc var auctionId: Swift.String { get set }
+  @objc var auctionConfigurationId: Foundation.NSNumber? { get set }
+  @objc var auctionConfigurationUid: Swift.String? { get set }
+  @objc var auctionPricefloor: Foundation.NSNumber { get set }
+  @objc var noBids: [any Bidon.AdUnitInfo]? { get set }
+  @objc var adUnits: [any Bidon.AdUnitInfo]? { get set }
+  @objc var timeout: Foundation.NSNumber { get set }
+  @objc var description: Swift.String? { get }
+}
+@objc(BDNAdUnitInfo) public protocol AdUnitInfo {
+  @objc var demandId: Swift.String { get }
+  @objc var label: Swift.String? { get }
+  @objc var price: Foundation.NSNumber? { get }
+  @objc var uid: Swift.String? { get }
+  @objc var bidType: Swift.String? { get }
+  @objc var fillStartTs: Foundation.NSNumber? { get }
+  @objc var fillFinishTs: Foundation.NSNumber? { get }
+  @objc var status: Swift.String { get }
+  @objc var ext: [Swift.String : Any]? { get }
+  @objc var extrasJsonString: Swift.String? { get }
+}
+extension Bidon.InjectedValues {
+  public var context: any Bidon.SdkContext {
+    get
+    set
+  }
+}
+public protocol SdkContext {
+  var isTestMode: Swift.Bool { get }
+  var extras: [Swift.String : Swift.AnyHashable] { get }
+  var regulations: any Bidon.Regulations { get }
+  var segment: any Bidon.Segment { get }
+}
+extension Bidon.BidonSdk {
+  @objc final public var extras: [Swift.String : Swift.AnyHashable] {
+    @objc get
+  }
+  final public var segment: any Bidon.Segment {
+    get
+  }
+  final public var regulations: any Bidon.Regulations {
+    get
+  }
+}
+@objc(BDNRewardedAd) final public class RewardedAd : ObjectiveC.NSObject, Bidon.RewardedAdObject {
+  @objc weak final public var delegate: (any Bidon.RewardedAdDelegate)?
+  @objc final public let auctionKey: Swift.String?
+  @objc final public var isReady: Swift.Bool {
+    @objc get
+  }
+  @objc final public var extras: [Swift.String : Swift.AnyHashable] {
+    @objc get
+  }
+  @objc public init(auctionKey: Swift.String? = nil)
+  @objc final public func setExtraValue(_ value: Swift.AnyHashable?, for key: Swift.String)
+  @objc final public func loadAd(with pricefloor: Bidon.Price = .zero)
+  @objc final public func showAd(from rootViewController: UIKit.UIViewController)
+  @objc(notifyWin) final public func notifyWin()
+  @objc(notifyLossWithExternalDemandId:price:) final public func notifyLoss(external demandId: Swift.String, price: Bidon.Price)
+  @objc deinit
+}
+@objc(BDNFramework) public enum Framework : Swift.UInt {
+  case native
+  case unity
+  case reactNative
+  case flutter
+  public init?(rawValue: Swift.UInt)
+  public typealias RawValue = Swift.UInt
+  public var rawValue: Swift.UInt {
+    get
+  }
+}
+extension Bidon.BidonSdk : Bidon.SdkContext {}
+extension Bidon.BannerPosition : Swift.Equatable {}
+extension Bidon.BannerPosition : Swift.Hashable {}
+extension Bidon.BannerPosition : Swift.RawRepresentable {}
+extension Bidon.Framework : Swift.Equatable {}
+extension Bidon.Framework : Swift.Hashable {}
+extension Bidon.Framework : Swift.RawRepresentable {}
+extension Bidon.AdType : Swift.Equatable {}
+extension Bidon.AdType : Swift.Hashable {}
+extension Bidon.AdType : Swift.RawRepresentable {}
+extension Bidon.ErrorCode : Swift.Equatable {}
+extension Bidon.ErrorCode : Swift.Hashable {}
+extension Bidon.ErrorCode : Swift.RawRepresentable {}
+extension Bidon.Logger.Level : Swift.Equatable {}
+extension Bidon.Logger.Level : Swift.Hashable {}
+extension Bidon.Logger.Level : Swift.RawRepresentable {}
+extension Bidon.AdBidType : Swift.Equatable {}
+extension Bidon.AdBidType : Swift.Hashable {}
+extension Bidon.AdBidType : Swift.RawRepresentable {}
+extension Bidon.BannerFormat : Swift.Equatable {}
+extension Bidon.BannerFormat : Swift.Hashable {}
+extension Bidon.BannerFormat : Swift.RawRepresentable {}
+extension Bidon.RevenuePrecision : Swift.Equatable {}
+extension Bidon.RevenuePrecision : Swift.Hashable {}
+extension Bidon.RevenuePrecision : Swift.RawRepresentable {}
+extension Bidon.Gender : Swift.Equatable {}
+extension Bidon.Gender : Swift.Hashable {}
+extension Bidon.Gender : Swift.RawRepresentable {}
+extension Bidon.Logger.Format : Swift.Equatable {}
+extension Bidon.Logger.Format : Swift.Hashable {}
+extension Bidon.Logger.Format : Swift.RawRepresentable {}
+extension Bidon.COPPAAppliesStatus : Swift.Equatable {}
+extension Bidon.COPPAAppliesStatus : Swift.Hashable {}
+extension Bidon.COPPAAppliesStatus : Swift.RawRepresentable {}
+extension Bidon.GDPRAppliesStatus : Swift.Equatable {}
+extension Bidon.GDPRAppliesStatus : Swift.Hashable {}
+extension Bidon.GDPRAppliesStatus : Swift.RawRepresentable {}

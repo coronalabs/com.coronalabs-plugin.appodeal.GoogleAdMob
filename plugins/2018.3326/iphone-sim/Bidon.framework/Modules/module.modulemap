@@ -1,0 +1,11 @@
+framework module Bidon {
+  umbrella header "Bidon.h"
+  export *
+
+  module * { export * }
+}
+
+module Bidon.Swift {
+  header "Bidon-Swift.h"
+  requires objc
+}

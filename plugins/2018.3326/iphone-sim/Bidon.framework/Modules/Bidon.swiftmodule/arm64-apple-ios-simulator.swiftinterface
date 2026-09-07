@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
-// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Bidon
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Bidon
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import AdSupport
 import AppTrackingTransparency
 @_exported import Bidon
@@ -122,7 +122,13 @@ public protocol Adapter {
   var name: Swift.String { get }
   var adapterVersion: Swift.String { get }
   var sdkVersion: Swift.String { get }
+  var fullAdapterVersion: Swift.String { get }
   init()
+}
+extension Bidon.Adapter {
+  public var fullAdapterVersion: Swift.String {
+    get
+  }
 }
 @objc public protocol DemandAd {
   @objc var id: Swift.String { get }

@@ -3224,6 +3224,48 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "fullAdapterVersion",
+            "printedName": "fullAdapterVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Bidon7AdapterP04fullB7VersionSSvp",
+            "mangledName": "$s5Bidon7AdapterP04fullB7VersionSSvp",
+            "moduleName": "Bidon",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Bidon7AdapterP04fullB7VersionSSvg",
+                "mangledName": "$s5Bidon7AdapterP04fullB7VersionSSvg",
+                "moduleName": "Bidon",
+                "genericSig": "<τ_0_0 where τ_0_0 : Bidon.Adapter>",
+                "sugared_genericSig": "<Self where Self : Bidon.Adapter>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -3243,6 +3285,50 @@
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "fullAdapterVersion",
+            "printedName": "fullAdapterVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Bidon7AdapterPAAE04fullB7VersionSSvp",
+            "mangledName": "$s5Bidon7AdapterPAAE04fullB7VersionSSvp",
+            "moduleName": "Bidon",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Bidon7AdapterPAAE04fullB7VersionSSvg",
+                "mangledName": "$s5Bidon7AdapterPAAE04fullB7VersionSSvg",
+                "moduleName": "Bidon",
+                "genericSig": "<τ_0_0 where τ_0_0 : Bidon.Adapter>",
+                "sugared_genericSig": "<Self where Self : Bidon.Adapter>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Protocol",
@@ -26458,1708 +26544,1722 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/BidonSdk.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/BidonSdk.swift",
       "kind": "BooleanLiteral",
       "offset": 436,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/BidonSdk.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/BidonSdk.swift",
       "kind": "Array",
       "offset": 974,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/BidonSdk.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/BidonSdk.swift",
       "kind": "BooleanLiteral",
       "offset": 1016,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Banner\/BannerProvider.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Banner\/BannerProvider.swift",
       "kind": "IntegerLiteral",
       "offset": 205,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Banner\/BannerProvider.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Banner\/BannerProvider.swift",
       "kind": "IntegerLiteral",
       "offset": 216,
       "length": 16,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Banner\/BannerProvider.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Banner\/BannerProvider.swift",
       "kind": "IntegerLiteral",
       "offset": 242,
       "length": 12,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Banner\/BannerProvider.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Banner\/BannerProvider.swift",
       "kind": "IntegerLiteral",
       "offset": 264,
       "length": 13,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Banner\/BannerProvider.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Banner\/BannerProvider.swift",
       "kind": "BooleanLiteral",
       "offset": 1285,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Banner\/BannerProvider.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Banner\/BannerProvider.swift",
       "kind": "IntegerLiteral",
       "offset": 2324,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Banner\/BannerProvider.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Banner\/BannerProvider.swift",
       "kind": "FloatLiteral",
       "offset": 2369,
       "length": 3,
       "value": "0.5"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Banner\/BannerProvider.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Banner\/BannerProvider.swift",
       "kind": "FloatLiteral",
       "offset": 2377,
       "length": 3,
       "value": "0.5"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Operations\/AsynchronousOperation.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Operations\/AsynchronousOperation.swift",
       "kind": "StringLiteral",
       "offset": 209,
       "length": 7,
       "value": "\"Ready\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Operations\/AsynchronousOperation.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Operations\/AsynchronousOperation.swift",
       "kind": "StringLiteral",
       "offset": 242,
       "length": 11,
       "value": "\"Executing\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Operations\/AsynchronousOperation.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Operations\/AsynchronousOperation.swift",
       "kind": "StringLiteral",
       "offset": 278,
       "length": 10,
       "value": "\"Finished\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Operations\/AsynchronousOperation.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Operations\/AsynchronousOperation.swift",
       "kind": "BooleanLiteral",
       "offset": 475,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/SessionModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/SessionModel.swift",
       "kind": "StringLiteral",
       "offset": 1528,
       "length": 11,
       "value": "\"launch_ts\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/SessionModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/SessionModel.swift",
       "kind": "StringLiteral",
       "offset": 1580,
       "length": 21,
       "value": "\"launch_monotonic_ts\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/SessionModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/SessionModel.swift",
       "kind": "StringLiteral",
       "offset": 1639,
       "length": 10,
       "value": "\"start_ts\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/SessionModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/SessionModel.swift",
       "kind": "StringLiteral",
       "offset": 1696,
       "length": 20,
       "value": "\"start_monotonic_ts\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/SessionModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/SessionModel.swift",
       "kind": "StringLiteral",
       "offset": 1742,
       "length": 4,
       "value": "\"ts\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/SessionModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/SessionModel.swift",
       "kind": "StringLiteral",
       "offset": 1781,
       "length": 14,
       "value": "\"monotonic_ts\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/SessionModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/SessionModel.swift",
       "kind": "StringLiteral",
       "offset": 1837,
       "length": 20,
       "value": "\"memory_warnings_ts\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/SessionModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/SessionModel.swift",
       "kind": "StringLiteral",
       "offset": 1908,
       "length": 30,
       "value": "\"memory_warnings_monotonic_ts\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/SessionModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/SessionModel.swift",
       "kind": "StringLiteral",
       "offset": 1967,
       "length": 10,
       "value": "\"ram_used\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/SessionModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/SessionModel.swift",
       "kind": "StringLiteral",
       "offset": 2007,
       "length": 10,
       "value": "\"ram_size\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/SessionModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/SessionModel.swift",
       "kind": "StringLiteral",
       "offset": 2056,
       "length": 9,
       "value": "\"battery\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/SessionModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/SessionModel.swift",
       "kind": "StringLiteral",
       "offset": 2100,
       "length": 11,
       "value": "\"cpu_usage\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/AppManager.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/AppManager.swift",
       "kind": "StringLiteral",
       "offset": 202,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/AppManager.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/AppManager.swift",
       "kind": "StringLiteral",
       "offset": 347,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Request\/Auction\/AuctionRequest.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Request\/Auction\/AuctionRequest.swift",
       "kind": "IntegerLiteral",
       "offset": 296,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Request\/Auction\/AuctionRequest.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Request\/Auction\/AuctionRequest.swift",
       "kind": "StringLiteral",
       "offset": 884,
       "length": 12,
       "value": "\"auction_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Request\/Auction\/AuctionRequest.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Request\/Auction\/AuctionRequest.swift",
       "kind": "StringLiteral",
       "offset": 931,
       "length": 13,
       "value": "\"auction_key\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Request\/Auction\/AuctionRequest.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Request\/Auction\/AuctionRequest.swift",
       "kind": "StringLiteral",
       "offset": 979,
       "length": 20,
       "value": "\"auction_pricefloor\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Banner\/BannerAdManager.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Banner\/BannerAdManager.swift",
       "kind": "Dictionary",
-      "offset": 1228,
+      "offset": 1257,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Banner\/BannerAdManager.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Banner\/BannerAdManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1405,
+      "offset": 1434,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Observer\/Mediation\/Base\/BaseAuctionObserver.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Observer\/Mediation\/Base\/BaseAuctionObserver.swift",
       "kind": "IntegerLiteral",
       "offset": 445,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Observer\/Mediation\/Base\/BaseAuctionObserver.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Observer\/Mediation\/Base\/BaseAuctionObserver.swift",
       "kind": "BooleanLiteral",
       "offset": 496,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/AdType.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/AdType.swift",
       "kind": "IntegerLiteral",
       "offset": 157,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/AdType.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/AdType.swift",
       "kind": "IntegerLiteral",
       "offset": 183,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/AdType.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/AdType.swift",
       "kind": "IntegerLiteral",
       "offset": 205,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Fullscreen\/FullscreenAdManager.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Fullscreen\/FullscreenAdManager.swift",
       "kind": "Array",
       "offset": 2477,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Fullscreen\/FullscreenAdManager.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Fullscreen\/FullscreenAdManager.swift",
       "kind": "Dictionary",
       "offset": 3025,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/GeoManager.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/GeoManager.swift",
       "kind": "IntegerLiteral",
       "offset": 511,
       "length": 4,
       "value": "3600"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Request\/Notification\/NotificationRequest.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Request\/Notification\/NotificationRequest.swift",
       "kind": "IntegerLiteral",
       "offset": 306,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/ErrorCode.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/ErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 179,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/ErrorCode.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/ErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 190,
       "length": 15,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/ErrorCode.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/ErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 215,
       "length": 22,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/ErrorCode.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/ErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 247,
       "length": 12,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/ErrorCode.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/ErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 269,
       "length": 17,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/ErrorCode.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/ErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 296,
       "length": 16,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/ErrorCode.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/ErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 322,
       "length": 16,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/ErrorCode.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/ErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 348,
       "length": 14,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/ErrorCode.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/ErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 372,
       "length": 14,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/ErrorCode.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/ErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 396,
       "length": 5,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/ErrorCode.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/ErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 411,
       "length": 6,
       "value": "11"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/ErrorCode.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/ErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 427,
       "length": 11,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/ErrorCode.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/ErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 448,
       "length": 12,
       "value": "13"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/ErrorCode.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/ErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 470,
       "length": 22,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/ErrorCode.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/ErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 502,
       "length": 11,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/ErrorCode.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/ErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 523,
       "length": 10,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/ErrorCode.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/ErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 543,
       "length": 21,
       "value": "17"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/ErrorCode.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/ErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 574,
       "length": 7,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/ErrorCode.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/ErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 591,
       "length": 15,
       "value": "19"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/ErrorCode.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/ErrorCode.swift",
       "kind": "StringLiteral",
       "offset": 657,
       "length": 17,
       "value": "\"org.bidon.error\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Ad\/Reward.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Ad\/Reward.swift",
       "kind": "StringLiteral",
       "offset": 618,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Request\/Base\/BaseRequestBuilder.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Request\/Base\/BaseRequestBuilder.swift",
       "kind": "BooleanLiteral",
       "offset": 236,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/DAG\/DirectedAcyclicGraph.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/DAG\/DirectedAcyclicGraph.swift",
       "kind": "Array",
       "offset": 693,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Viewability\/Viewability.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Viewability\/Viewability.swift",
       "kind": "FloatLiteral",
-      "offset": 197,
+      "offset": 243,
       "length": 3,
       "value": "0.8"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Logging\/LogFormatter.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Logging\/LogFormatter.swift",
       "kind": "StringLiteral",
       "offset": 339,
       "length": 23,
       "value": "\"yyyy-MM-dd'T'HH:mm:ss\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Mediation\/Bid\/ServerBidModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Mediation\/Bid\/ServerBidModel.swift",
       "kind": "StringLiteral",
       "offset": 239,
       "length": 7,
       "value": "\"impId\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Mediation\/Bid\/ServerBidModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Mediation\/Bid\/ServerBidModel.swift",
       "kind": "StringLiteral",
       "offset": 275,
       "length": 6,
       "value": "\"nurl\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Mediation\/Bid\/ServerBidModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Mediation\/Bid\/ServerBidModel.swift",
       "kind": "StringLiteral",
       "offset": 314,
       "length": 6,
       "value": "\"burl\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Mediation\/Bid\/ServerBidModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Mediation\/Bid\/ServerBidModel.swift",
       "kind": "StringLiteral",
       "offset": 350,
       "length": 6,
       "value": "\"lurl\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Mediation\/Bid\/ServerBidModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Mediation\/Bid\/ServerBidModel.swift",
       "kind": "StringLiteral",
       "offset": 380,
       "length": 5,
       "value": "\"ext\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/ImpressionModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/ImpressionModel.swift",
       "kind": "StringLiteral",
       "offset": 612,
       "length": 12,
       "value": "\"auction_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/ImpressionModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/ImpressionModel.swift",
       "kind": "StringLiteral",
       "offset": 658,
       "length": 20,
       "value": "\"auction_pricefloor\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/ImpressionModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/ImpressionModel.swift",
       "kind": "StringLiteral",
       "offset": 718,
       "length": 27,
       "value": "\"auction_configuration_uid\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/ImpressionModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/ImpressionModel.swift",
       "kind": "StringLiteral",
       "offset": 784,
       "length": 26,
       "value": "\"auction_configuration_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/ImpressionModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/ImpressionModel.swift",
       "kind": "StringLiteral",
       "offset": 834,
       "length": 10,
       "value": "\"bid_type\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/ImpressionModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/ImpressionModel.swift",
       "kind": "StringLiteral",
       "offset": 869,
       "length": 11,
       "value": "\"demand_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/ImpressionModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/ImpressionModel.swift",
       "kind": "StringLiteral",
       "offset": 906,
       "length": 13,
       "value": "\"ad_unit_uid\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/ImpressionModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/ImpressionModel.swift",
       "kind": "StringLiteral",
       "offset": 947,
       "length": 15,
       "value": "\"ad_unit_label\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/ImpressionModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/ImpressionModel.swift",
       "kind": "StringLiteral",
       "offset": 984,
       "length": 7,
       "value": "\"price\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/ImpressionModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/ImpressionModel.swift",
       "kind": "StringLiteral",
       "offset": 1014,
       "length": 8,
       "value": "\"banner\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/ImpressionModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/ImpressionModel.swift",
       "kind": "StringLiteral",
       "offset": 1051,
       "length": 14,
       "value": "\"interstitial\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/ImpressionModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/ImpressionModel.swift",
       "kind": "StringLiteral",
       "offset": 1090,
       "length": 10,
       "value": "\"rewarded\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/RegulationsModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/RegulationsModel.swift",
       "kind": "StringLiteral",
       "offset": 524,
       "length": 12,
       "value": "\"us_privacy\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Ad\/Ad.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Ad\/Ad.swift",
       "kind": "IntegerLiteral",
       "offset": 178,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Ad\/Ad.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Ad\/Ad.swift",
       "kind": "IntegerLiteral",
       "offset": 189,
       "length": 3,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Auction\/DefaultAuctionInfo.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Auction\/DefaultAuctionInfo.swift",
       "kind": "StringLiteral",
       "offset": 191,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Auction\/DefaultAuctionInfo.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Auction\/DefaultAuctionInfo.swift",
       "kind": "IntegerLiteral",
       "offset": 315,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Auction\/DefaultAuctionInfo.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Auction\/DefaultAuctionInfo.swift",
       "kind": "StringLiteral",
       "offset": 557,
       "length": 11,
       "value": "\"auctionId\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Auction\/DefaultAuctionInfo.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Auction\/DefaultAuctionInfo.swift",
       "kind": "StringLiteral",
       "offset": 593,
       "length": 24,
       "value": "\"auctionConfigurationId\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Auction\/DefaultAuctionInfo.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Auction\/DefaultAuctionInfo.swift",
       "kind": "StringLiteral",
       "offset": 645,
       "length": 6,
       "value": "\"null\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Auction\/DefaultAuctionInfo.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Auction\/DefaultAuctionInfo.swift",
       "kind": "StringLiteral",
       "offset": 665,
       "length": 25,
       "value": "\"auctionConfigurationUid\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Auction\/DefaultAuctionInfo.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Auction\/DefaultAuctionInfo.swift",
       "kind": "StringLiteral",
       "offset": 719,
       "length": 6,
       "value": "\"null\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Auction\/DefaultAuctionInfo.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Auction\/DefaultAuctionInfo.swift",
       "kind": "StringLiteral",
       "offset": 739,
       "length": 19,
       "value": "\"auctionPricefloor\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Auction\/DefaultAuctionInfo.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Auction\/DefaultAuctionInfo.swift",
       "kind": "StringLiteral",
       "offset": 791,
       "length": 8,
       "value": "\"noBids\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Auction\/DefaultAuctionInfo.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Auction\/DefaultAuctionInfo.swift",
       "kind": "StringLiteral",
       "offset": 851,
       "length": 6,
       "value": "\"null\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Auction\/DefaultAuctionInfo.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Auction\/DefaultAuctionInfo.swift",
       "kind": "StringLiteral",
       "offset": 871,
       "length": 9,
       "value": "\"adUnits\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Auction\/DefaultAuctionInfo.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Auction\/DefaultAuctionInfo.swift",
       "kind": "StringLiteral",
       "offset": 933,
       "length": 6,
       "value": "\"null\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Auction\/DefaultAuctionInfo.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Auction\/DefaultAuctionInfo.swift",
       "kind": "Array",
       "offset": 1356,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Request\/Impression\/ImpressionRequest.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Request\/Impression\/ImpressionRequest.swift",
       "kind": "IntegerLiteral",
       "offset": 298,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/BannerFormat.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/BannerFormat.swift",
       "kind": "IntegerLiteral",
       "offset": 231,
       "length": 11,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/BannerFormat.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/BannerFormat.swift",
       "kind": "IntegerLiteral",
       "offset": 252,
       "length": 4,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/BannerFormat.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/BannerFormat.swift",
       "kind": "IntegerLiteral",
       "offset": 266,
       "length": 8,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/SessionManager.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/SessionManager.swift",
       "kind": "Array",
       "offset": 637,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/SessionManager.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/SessionManager.swift",
       "kind": "Array",
       "offset": 719,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/DeviceModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/DeviceModel.swift",
       "kind": "StringLiteral",
       "offset": 1369,
       "length": 4,
       "value": "\"ua\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/DeviceModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/DeviceModel.swift",
       "kind": "StringLiteral",
       "offset": 1394,
       "length": 6,
       "value": "\"make\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/DeviceModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/DeviceModel.swift",
       "kind": "StringLiteral",
       "offset": 1422,
       "length": 7,
       "value": "\"model\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/DeviceModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/DeviceModel.swift",
       "kind": "StringLiteral",
       "offset": 1450,
       "length": 6,
       "value": "\"type\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/DeviceModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/DeviceModel.swift",
       "kind": "StringLiteral",
       "offset": 1475,
       "length": 4,
       "value": "\"os\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/DeviceModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/DeviceModel.swift",
       "kind": "StringLiteral",
       "offset": 1505,
       "length": 5,
       "value": "\"osv\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/DeviceModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/DeviceModel.swift",
       "kind": "StringLiteral",
       "offset": 1542,
       "length": 5,
       "value": "\"hwv\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/DeviceModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/DeviceModel.swift",
       "kind": "StringLiteral",
       "offset": 1575,
       "length": 3,
       "value": "\"h\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/DeviceModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/DeviceModel.swift",
       "kind": "StringLiteral",
       "offset": 1605,
       "length": 3,
       "value": "\"w\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/DeviceModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/DeviceModel.swift",
       "kind": "StringLiteral",
       "offset": 1628,
       "length": 5,
       "value": "\"ppi\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/DeviceModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/DeviceModel.swift",
       "kind": "StringLiteral",
       "offset": 1660,
       "length": 9,
       "value": "\"pxratio\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/DeviceModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/DeviceModel.swift",
       "kind": "StringLiteral",
       "offset": 1696,
       "length": 4,
       "value": "\"js\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/DeviceModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/DeviceModel.swift",
       "kind": "StringLiteral",
       "offset": 1725,
       "length": 10,
       "value": "\"language\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/DeviceModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/DeviceModel.swift",
       "kind": "StringLiteral",
       "offset": 1759,
       "length": 9,
       "value": "\"carrier\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/DeviceModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/DeviceModel.swift",
       "kind": "StringLiteral",
       "offset": 1791,
       "length": 8,
       "value": "\"mccmnc\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/DeviceModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/DeviceModel.swift",
       "kind": "StringLiteral",
       "offset": 1829,
       "length": 17,
       "value": "\"connection_type\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/DeviceModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Environment\/DeviceModel.swift",
       "kind": "StringLiteral",
       "offset": 1866,
       "length": 5,
       "value": "\"geo\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Banner\/BannerViewManager.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Banner\/BannerViewManager.swift",
       "kind": "IntegerLiteral",
       "offset": 693,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Banner\/BannerViewManager.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Banner\/BannerViewManager.swift",
       "kind": "Dictionary",
       "offset": 1253,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/AdRevenue\/AdRevenue.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/AdRevenue\/AdRevenue.swift",
       "kind": "FloatLiteral",
       "offset": 207,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/AdRevenue\/AdRevenue.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/AdRevenue\/AdRevenue.swift",
       "kind": "StringLiteral",
       "offset": 546,
       "length": 7,
       "value": "\"en_US\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/AdRevenue\/AdRevenue.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/AdRevenue\/AdRevenue.swift",
       "kind": "StringLiteral",
       "offset": 813,
       "length": 5,
       "value": "\"USD\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/AdRevenue\/AdRevenue.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/AdRevenue\/AdRevenue.swift",
       "kind": "IntegerLiteral",
       "offset": 931,
       "length": 9,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/EncodableAuctionReportModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/EncodableAuctionReportModel.swift",
       "kind": "StringLiteral",
       "offset": 664,
       "length": 18,
       "value": "\"auction_start_ts\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/EncodableAuctionReportModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/EncodableAuctionReportModel.swift",
       "kind": "StringLiteral",
       "offset": 718,
       "length": 19,
       "value": "\"auction_finish_ts\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/EncodableAuctionReportModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/EncodableAuctionReportModel.swift",
       "kind": "StringLiteral",
       "offset": 2483,
       "length": 16,
       "value": "\"token_start_ts\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/EncodableAuctionReportModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/EncodableAuctionReportModel.swift",
       "kind": "StringLiteral",
       "offset": 2531,
       "length": 17,
       "value": "\"token_finish_ts\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/EncodableAuctionReportModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/EncodableAuctionReportModel.swift",
       "kind": "StringLiteral",
       "offset": 2578,
       "length": 15,
       "value": "\"fill_start_ts\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/EncodableAuctionReportModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/EncodableAuctionReportModel.swift",
       "kind": "StringLiteral",
       "offset": 2624,
       "length": 16,
       "value": "\"fill_finish_ts\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/EncodableAuctionReportModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/EncodableAuctionReportModel.swift",
       "kind": "StringLiteral",
       "offset": 2669,
       "length": 11,
       "value": "\"demand_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/EncodableAuctionReportModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/EncodableAuctionReportModel.swift",
       "kind": "StringLiteral",
       "offset": 2708,
       "length": 10,
       "value": "\"bid_type\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/EncodableAuctionReportModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/EncodableAuctionReportModel.swift",
       "kind": "StringLiteral",
       "offset": 2748,
       "length": 13,
       "value": "\"ad_unit_uid\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/EncodableAuctionReportModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/EncodableAuctionReportModel.swift",
       "kind": "StringLiteral",
       "offset": 2793,
       "length": 15,
       "value": "\"ad_unit_label\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/EncodableAuctionReportModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/EncodableAuctionReportModel.swift",
       "kind": "StringLiteral",
       "offset": 4231,
       "length": 27,
       "value": "\"auction_configuration_uid\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/EncodableAuctionReportModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/EncodableAuctionReportModel.swift",
       "kind": "StringLiteral",
       "offset": 4284,
       "length": 12,
       "value": "\"auction_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/EncodableAuctionReportModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/EncodableAuctionReportModel.swift",
       "kind": "StringLiteral",
       "offset": 4335,
       "length": 26,
       "value": "\"auction_configuration_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/EncodableAuctionReportModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/EncodableAuctionReportModel.swift",
       "kind": "StringLiteral",
       "offset": 4388,
       "length": 20,
       "value": "\"auction_pricefloor\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/EncodableAuctionReportModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/EncodableAuctionReportModel.swift",
       "kind": "StringLiteral",
       "offset": 4452,
       "length": 10,
       "value": "\"ad_units\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Segment.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Segment.swift",
       "kind": "IntegerLiteral",
       "offset": 165,
       "length": 6,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Segment.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Segment.swift",
       "kind": "IntegerLiteral",
       "offset": 181,
       "length": 5,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/AdUnitModel.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Models\/Auction\/AdUnitModel.swift",
       "kind": "StringLiteral",
       "offset": 726,
       "length": 5,
       "value": "\"ext\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Constants.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 166,
       "length": 8,
-      "value": "\"0.11.0\""
+      "value": "\"0.15.0\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Constants.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 210,
+      "offset": 223,
+      "length": 8,
+      "value": "\"0.12.0\""
+    },
+    {
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 278,
+      "length": 7,
+      "value": "\"1.0.0\""
+    },
+    {
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 321,
       "length": 38,
       "value": "\"00000000-0000-0000-0000-000000000000\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Constants.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 292,
+      "offset": 403,
       "length": 9,
       "value": "\"default\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Constants.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 344,
+      "offset": 455,
       "length": 17,
       "value": "\"b.appbaqend.com\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Constants.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 391,
+      "offset": 502,
       "length": 10,
       "value": "\"https:\/\/\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Constants.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Constants.swift",
       "kind": "Array",
-      "offset": 475,
-      "length": 1272,
-      "value": "[\"BidonAdapterAmazon.AmazonDemandSourceAdapter\", \"BidonAdapterBidMachine.BidMachineDemandSourceAdapter\", \"BidonAdapterGoogleMobileAds.GoogleMobileAdsDemandSourceAdapter\", \"BidonAdapterAppLovin.AppLovinDemandSourceAdapter\", \"BidonAdapterDTExchange.DTExchangeDemandSourceAdapter\", \"BidonAdapterUnityAds.UnityAdsDemandSourceAdapter\", \"BidonAdapterMintegral.MintegralDemandSourceAdapter\", \"BidonAdapterMobileFuse.MobileFuseDemandSourceAdapter\", \"BidonAdapterVungle.VungleDemandSourceAdapter\", \"BidonAdapterBigoAds.BigoAdsDemandSourceAdapter\", \"BidonAdapterMetaAudienceNetwork.MetaAudienceNetworkDemandSourceAdapter\", \"BidonAdapterInMobi.InMobiDemandSourceAdapter\", \"BidonAdapterAmazon.AmazonDemandSourceAdapter\", \"BidonAdapterGoogleAdManager.GoogleAdManagerDemandSourceAdapter\", \"BidonAdapterMyTarget.MyTargetDemandSourceAdapter\", \"BidonAdapterIronSource.IronSourceDemandSourceAdapter\", \"BidonAdapterYandex.YandexDemandSourceAdapter\", \"BidonAdapterChartboost.ChartboostDemandSourceAdapter\", \"BidonAdapterMoloco.MolocoDemandSourceAdapter\"]"
+      "offset": 586,
+      "length": 1520,
+      "value": "[\"BidonAdapterAmazon.AmazonDemandSourceAdapter\", \"BidonAdapterBidMachine.BidMachineDemandSourceAdapter\", \"BidonAdapterGoogleMobileAds.GoogleMobileAdsDemandSourceAdapter\", \"BidonAdapterAppLovin.AppLovinDemandSourceAdapter\", \"BidonAdapterDTExchange.DTExchangeDemandSourceAdapter\", \"BidonAdapterUnityAds.UnityAdsDemandSourceAdapter\", \"BidonAdapterMintegral.MintegralDemandSourceAdapter\", \"BidonAdapterMobileFuse.MobileFuseDemandSourceAdapter\", \"BidonAdapterVungle.VungleDemandSourceAdapter\", \"BidonAdapterBigoAds.BigoAdsDemandSourceAdapter\", \"BidonAdapterMetaAudienceNetwork.MetaAudienceNetworkDemandSourceAdapter\", \"BidonAdapterInMobi.InMobiDemandSourceAdapter\", \"BidonAdapterAmazon.AmazonDemandSourceAdapter\", \"BidonAdapterGoogleAdManager.GoogleAdManagerDemandSourceAdapter\", \"BidonAdapterMyTarget.MyTargetDemandSourceAdapter\", \"BidonAdapterIronSource.IronSourceDemandSourceAdapter\", \"BidonAdapterYandex.YandexDemandSourceAdapter\", \"BidonAdapterChartboost.ChartboostDemandSourceAdapter\", \"BidonAdapterStartIo.StartIoDemandSourceAdapter\", \"BidonAdapterMoloco.MolocoDemandSourceAdapter\", \"BidonAdapterTaurusX.TaurusXDemandSourceAdapter\", \"BidonAdapterYandex.YandexDemandSourceAdapter\", \"BidonAdapterZmaticoo.ZmaticooDemandSourceAdapter\"]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Constants.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1809,
+      "offset": 2168,
       "length": 12,
       "value": "\"BidonToken\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Constants.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1847,
+      "offset": 2206,
       "length": 10,
       "value": "\"BidonIdg\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Constants.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1885,
+      "offset": 2244,
       "length": 12,
       "value": "\"BidonCoppa\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Constants.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1929,
+      "offset": 2288,
       "length": 16,
       "value": "\"BidonSegmentId\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Constants.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1978,
+      "offset": 2337,
       "length": 17,
       "value": "\"BidonSegmentUid\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Constants.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 2386,
+      "length": 16,
+      "value": "\"BidonUserAgent\""
+    },
+    {
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 2443,
+      "length": 25,
+      "value": "\"BidonUserAgentOSVersion\""
+    },
+    {
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Constants.swift",
       "kind": "FloatLiteral",
-      "offset": 2078,
+      "offset": 2551,
       "length": 4,
       "value": "10.0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Constants.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Constants.swift",
       "kind": "FloatLiteral",
-      "offset": 2133,
+      "offset": 2606,
       "length": 4,
       "value": "30.0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Ad\/AdWrapper.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Ad\/AdWrapper.swift",
       "kind": "StringLiteral",
       "offset": 3387,
       "length": 7,
       "value": "\"en_US\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Ad\/AdWrapper.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Ad\/AdWrapper.swift",
       "kind": "StringLiteral",
       "offset": 3851,
       "length": 73,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Ad\/AdWrapper.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Ad\/AdWrapper.swift",
       "kind": "StringLiteral",
       "offset": 3873,
       "length": 1,
       "value": "\" (\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Ad\/AdWrapper.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Ad\/AdWrapper.swift",
       "kind": "StringLiteral",
       "offset": 3904,
       "length": 1,
       "value": "\") ad #\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Ad\/AdWrapper.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Ad\/AdWrapper.swift",
       "kind": "StringLiteral",
       "offset": 3923,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Ad\/AdWrapper.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Ad\/AdWrapper.swift",
       "kind": "StringLiteral",
       "offset": 3992,
       "length": 13,
       "value": "\"price \""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Ad\/AdWrapper.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Ad\/AdWrapper.swift",
       "kind": "StringLiteral",
       "offset": 4004,
       "length": 4,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Ad\/AdWrapper.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Ad\/AdWrapper.swift",
       "kind": "StringLiteral",
       "offset": 4021,
       "length": 26,
       "value": "\"network '\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Ad\/AdWrapper.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Ad\/AdWrapper.swift",
       "kind": "StringLiteral",
       "offset": 4045,
       "length": 2,
       "value": "\"'\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Ad\/AdWrapper.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Ad\/AdWrapper.swift",
       "kind": "StringLiteral",
       "offset": 4147,
       "length": 4,
       "value": "\", \""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Request\/Configuration\/ConfigurationRequest.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Request\/Configuration\/ConfigurationRequest.swift",
       "kind": "IntegerLiteral",
       "offset": 341,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Request\/Configuration\/ConfigurationRequest.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Request\/Configuration\/ConfigurationRequest.swift",
       "kind": "StringLiteral",
       "offset": 1147,
       "length": 6,
       "value": "\"init\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Request\/Configuration\/ConfigurationRequest.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Request\/Configuration\/ConfigurationRequest.swift",
       "kind": "StringLiteral",
       "offset": 1179,
       "length": 7,
       "value": "\"token\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Mediation\/Ad\/AdUnit.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Mediation\/Ad\/AdUnit.swift",
       "kind": "StringLiteral",
       "offset": 151,
       "length": 5,
       "value": "\"RTB\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Mediation\/Ad\/AdUnit.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Mediation\/Ad\/AdUnit.swift",
       "kind": "StringLiteral",
       "offset": 175,
       "length": 5,
       "value": "\"CPM\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/PropertyWrappers\/Atomic.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/PropertyWrappers\/Atomic.swift",
       "kind": "StringLiteral",
       "offset": 182,
       "length": 24,
       "value": "\"com.bidon.atomic.queue\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/PropertyWrappers\/Atomic.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/PropertyWrappers\/Atomic.swift",
       "kind": "StringLiteral",
       "offset": 747,
       "length": 31,
       "value": "\"com.bidon.barrierAtomic.queue\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Observer\/Mediation\/Base\/DemandObservation.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Observer\/Mediation\/Base\/DemandObservation.swift",
       "kind": "Array",
       "offset": 694,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Adapters\/DemandSource\/AnyDemandSourceAdapter.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Adapters\/DemandSource\/AnyDemandSourceAdapter.swift",
       "kind": "IntegerLiteral",
       "offset": 240,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Adapters\/DemandSource\/AnyDemandSourceAdapter.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Adapters\/DemandSource\/AnyDemandSourceAdapter.swift",
       "kind": "IntegerLiteral",
       "offset": 245,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Adapters\/DemandSource\/AnyDemandSourceAdapter.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Adapters\/DemandSource\/AnyDemandSourceAdapter.swift",
       "kind": "IntegerLiteral",
       "offset": 313,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Adapters\/DemandSource\/AnyDemandSourceAdapter.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Adapters\/DemandSource\/AnyDemandSourceAdapter.swift",
       "kind": "IntegerLiteral",
       "offset": 318,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Auction\/Builders\/ConcurrentAuctionControllerBuilder.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Auction\/Builders\/ConcurrentAuctionControllerBuilder.swift",
       "kind": "Array",
       "offset": 813,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Logging\/Logger.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Logging\/Logger.swift",
       "kind": "IntegerLiteral",
       "offset": 237,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Logging\/Logger.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Logging\/Logger.swift",
       "kind": "IntegerLiteral",
       "offset": 260,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Logging\/Logger.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Logging\/Logger.swift",
       "kind": "IntegerLiteral",
       "offset": 282,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Logging\/Logger.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Logging\/Logger.swift",
       "kind": "IntegerLiteral",
       "offset": 307,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Logging\/Logger.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Logging\/Logger.swift",
       "kind": "IntegerLiteral",
       "offset": 330,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Logging\/Logger.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Logging\/Logger.swift",
       "kind": "IntegerLiteral",
       "offset": 351,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Logging\/Logger.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Logging\/Logger.swift",
       "kind": "IntegerLiteral",
       "offset": 438,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Logging\/Logger.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Logging\/Logger.swift",
       "kind": "IntegerLiteral",
       "offset": 460,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Logging\/Logger.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Logging\/Logger.swift",
       "kind": "StringLiteral",
       "offset": 702,
       "length": 24,
       "value": "\"com.bidon.logger.queue\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Auction\/Demands\/DemandsTokensManager.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Auction\/Demands\/DemandsTokensManager.swift",
       "kind": "BooleanLiteral",
       "offset": 775,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Auction\/Controller\/ConcurrentAuctionController.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Auction\/Controller\/ConcurrentAuctionController.swift",
       "kind": "IntegerLiteral",
       "offset": 872,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Auction\/Controller\/ConcurrentAuctionController.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Auction\/Controller\/ConcurrentAuctionController.swift",
       "kind": "StringLiteral",
       "offset": 895,
       "length": 55,
       "value": "\"com.bidon.auction.queue.\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Auction\/Controller\/ConcurrentAuctionController.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Auction\/Controller\/ConcurrentAuctionController.swift",
       "kind": "StringLiteral",
       "offset": 949,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Auction\/Controller\/ConcurrentAuctionController.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Auction\/Controller\/ConcurrentAuctionController.swift",
       "kind": "StringLiteral",
       "offset": 1077,
       "length": 35,
       "value": "\"com.bidon.auction.operationsQueue\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Auction\/Controller\/ConcurrentAuctionController.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Auction\/Controller\/ConcurrentAuctionController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1901,
+      "offset": 1828,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Banner\/BannerView.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Banner\/BannerView.swift",
       "kind": "IntegerLiteral",
       "offset": 258,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Banner\/BannerView.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Banner\/BannerView.swift",
       "kind": "BooleanLiteral",
       "offset": 308,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Banner\/BannerView.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Banner\/BannerView.swift",
       "kind": "BooleanLiteral",
       "offset": 662,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Banner\/BannerView.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Banner\/BannerView.swift",
       "kind": "Dictionary",
       "offset": 752,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Banner\/BannerView.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/SDK\/Banner\/BannerView.swift",
       "kind": "Array",
       "offset": 1406,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Regulations.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Regulations.swift",
       "kind": "IntegerLiteral",
       "offset": 189,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Regulations.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Regulations.swift",
       "kind": "IntegerLiteral",
       "offset": 206,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Regulations.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Regulations.swift",
       "kind": "IntegerLiteral",
       "offset": 223,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Regulations.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Regulations.swift",
       "kind": "IntegerLiteral",
       "offset": 313,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Regulations.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Regulations.swift",
       "kind": "IntegerLiteral",
       "offset": 340,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Regulations.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Regulations.swift",
       "kind": "IntegerLiteral",
       "offset": 361,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Manager\/HTTPTask.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Manager\/HTTPTask.swift",
       "kind": "StringLiteral",
       "offset": 219,
       "length": 5,
       "value": "\"GET\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Manager\/HTTPTask.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Manager\/HTTPTask.swift",
       "kind": "StringLiteral",
       "offset": 245,
       "length": 6,
       "value": "\"POST\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Adapters\/AdaptersInitializator.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Adapters\/AdaptersInitializator.swift",
       "kind": "IntegerLiteral",
       "offset": 467,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Adapters\/AdaptersInitializator.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Adapters\/AdaptersInitializator.swift",
       "kind": "StringLiteral",
-      "offset": 2891,
+      "offset": 3130,
       "length": 32,
       "value": "\"com.bidon.initialization.queue\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/ExtrasManager.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/ExtrasManager.swift",
       "kind": "Dictionary",
       "offset": 183,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Adapters\/AdaptersRepository.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Adapters\/AdaptersRepository.swift",
       "kind": "IntegerLiteral",
       "offset": 234,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/DeviceManager.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/DeviceManager.swift",
       "kind": "StringLiteral",
       "offset": 345,
       "length": 7,
       "value": "\"Apple\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/DeviceManager.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/DeviceManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1230,
+      "offset": 1207,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/DeviceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2187,
-      "length": 11,
-      "value": "\"userAgent\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/DeviceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2215,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/DeviceManager.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/DeviceManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2346,
+      "offset": 3717,
       "length": 3,
       "value": "132"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/DeviceManager.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/DeviceManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2374,
+      "offset": 3745,
       "length": 3,
       "value": "163"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Request\/Statistic\/StatisticRequest.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Request\/Statistic\/StatisticRequest.swift",
       "kind": "IntegerLiteral",
       "offset": 300,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Logging\/OSLogDestination.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Logging\/OSLogDestination.swift",
       "kind": "StringLiteral",
       "offset": 197,
       "length": 4,
       "value": "\"os\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Manager\/NetworkManager.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Networking\/Manager\/NetworkManager.swift",
       "kind": "Dictionary",
       "offset": 1030,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/RegulationsManager.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/RegulationsManager.swift",
       "kind": "BooleanLiteral",
       "offset": 549,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/RegulationsManager.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/RegulationsManager.swift",
       "kind": "IntegerLiteral",
       "offset": 798,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/RegulationsManager.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/RegulationsManager.swift",
       "kind": "BooleanLiteral",
       "offset": 826,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/RegulationsManager.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/RegulationsManager.swift",
       "kind": "StringLiteral",
       "offset": 882,
       "length": 3,
       "value": "\"1\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/RegulationsManager.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/RegulationsManager.swift",
       "kind": "StringLiteral",
       "offset": 936,
       "length": 3,
       "value": "\"-\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/RegulationsManager.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/RegulationsManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1058,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/RegulationsManager.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/RegulationsManager.swift",
       "kind": "BooleanLiteral",
       "offset": 1086,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/RegulationsManager.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/RegulationsManager.swift",
       "kind": "StringLiteral",
       "offset": 1142,
       "length": 3,
       "value": "\"1\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/RegulationsManager.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/RegulationsManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1225,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/RegulationsManager.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/RegulationsManager.swift",
       "kind": "StringLiteral",
       "offset": 1245,
       "length": 3,
       "value": "\"N\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/RegulationsManager.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/RegulationsManager.swift",
       "kind": "Dictionary",
       "offset": 1697,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/RegulationsManager.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Modules\/Environment\/Managers\/RegulationsManager.swift",
       "kind": "Dictionary",
       "offset": 1745,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Viewability\/ViewabilityTracker.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Viewability\/ViewabilityTracker.swift",
       "kind": "FloatLiteral",
-      "offset": 463,
+      "offset": 499,
       "length": 4,
       "value": "0.25"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Viewability\/ViewabilityTracker.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Viewability\/ViewabilityTracker.swift",
       "kind": "FloatLiteral",
-      "offset": 512,
+      "offset": 548,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Viewability\/ViewabilityTracker.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Viewability\/ViewabilityTracker.swift",
       "kind": "FloatLiteral",
-      "offset": 569,
+      "offset": 605,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/Framework.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/Framework.swift",
       "kind": "IntegerLiteral",
       "offset": 176,
       "length": 5,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/Framework.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/Framework.swift",
       "kind": "IntegerLiteral",
       "offset": 191,
       "length": 11,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/runner\/work\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/Framework.swift",
+      "filePath": "\/Users\/appodeal\/actions-runner-bidon\/_work_bidon\/bidon-sdk-ios\/bidon-sdk-ios\/Bidon\/Shared\/Enums\/Framework.swift",
       "kind": "IntegerLiteral",
       "offset": 212,
       "length": 7,
